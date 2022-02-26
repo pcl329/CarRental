@@ -1,0 +1,192 @@
+
+#fixe{
+    position: fixed;
+    text-align: center center;
+    right: 70px;
+    bottom: 70px;
+}
+body{
+    background-color: white;
+}
+.promotion{
+    width: 100px;
+    height: 100px;
+    background-color:black;
+    border-radius: 5px 40px 5px;
+    text-align: center center;
+    margin-bottom: 50px;
+    display: inline-block;
+    color: blanchedalmond;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+.promotion a:hover{
+    text-decoration:none
+}
+
+.topimgbg{
+    background-repeat: no-repeat;
+    background-image: url("../img/carandchild.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 8rem 0 5.5rem;
+    height: 500px;
+}
+
+.topimgbg .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay{
+    background-color: black;
+    opacity: 0.5;
+}
+
+.topimgbg .container{
+    position: relative;
+}
+
+.topcontent .toptitle{
+    text-align: center;
+}
+
+.container{
+
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toptitle{
+    color: aliceblue;
+    font-family: 'Lobster', cursive;
+}
+
+
+.title{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.title h1{
+    color: black;
+    font-family: 'Lobster', cursive;
+}
+
+#bestoffres{
+    
+  display: flex;
+  justify-content: space-around;
+  /*padding: 10px;*/
+  z-index: 9999;
+  width: 100%;
+  text-align: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 9999;
+    width: 100%;
+    text-align: center;
+}
+
+.offre{
+    border: 320px 100px;
+    background-color: rgb(266, 187,102);
+    border-radius: 5px;
+  
+}
+a .offre{
+    color: #873030;
+}
+a .offre:active{
+    color:rgb(189, 15, 15);
+}
+.offre h2 {
+    padding: 5px 0px;
+}
+
+
+.img-fluid{
+    height: 300px;
+    width: 100%;
+  
+}
+
+.line {
+    height: 2px;
+    width:  33%;
+    margin-left: 33%;
+    margin-right: 33%;
+    color:#222 ;
+    background-color:#222;
+   
+   
+}
+
+.separator{
+    height: 2px;
+    width:  33%;
+    margin-left: 33%;
+    margin-right: 33%;
+    color:antiquewhite ;
+}
+
+
+#category{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    z-index: 9999;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+
+  
+}
+
+
+.mark{
+    height: 100px;
+    width: 150px;
+}
+
+
+
+
+  /*---- TABLET ----*/
+  @media only screen and (max-width: 850px) and (min-width: 450px) {
+    .row{
+      width: 100%;
+      display: block;
+      justify-content: center;
+  }
+
+
+
+   }
+    
+
+    /*---- MOBILE----*/
+    @media only screen and (max-width: 450px) {
+      .row {
+        width: 100%;
+        display: block;
+        justify-content: center;
+
+  }
+
+   }

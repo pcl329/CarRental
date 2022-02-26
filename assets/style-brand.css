@@ -1,0 +1,184 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+#fixe{
+  position: fixed;
+  text-align: center center;
+  right: 70px;
+  bottom: 70px;
+}
+.model-button{
+  display: flex;
+  justify-content: space-around;
+}
+.model-button h2{
+  outline: 5px rgb(143, 62, 62) solid;
+  display: inline-block;
+  padding: 5px 20px;
+  color: black;
+  
+}
+a:link{
+  color: #803232;
+}
+a:visited{
+  color: rgb(189, 15, 15);
+}
+#contenue{
+  flex: content;
+  text-align: center;
+  padding-top: 30px;
+  background-color: rgb(226, 187, 102);
+  
+ }
+
+ #contenue h1,h3{
+  font-family: 'Lobster', cursive;
+ }
+
+ .package{
+   display: flex;
+   align-items: center;
+   padding-bottom: 50px;
+   padding-top: 80px;
+ }
+
+.offre-left{
+  flex: content;
+  text-align: center;
+  padding-left: 100px;
+ 
+}
+
+#type{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  z-index: 9999;
+  width: 100%;
+  padding-left: 300px;
+  padding-right: 300px;
+  /*background-color: black;*/
+    
+}
+
+.toptitle{
+  display: flex;
+   align-items: center;
+   
+}
+/*
+.container{
+  color: aliceblue;
+
+}
+.container a:hover{text-decoration:none}*/
+
+
+.offre-right{
+  flex: content;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 20px;
+
+}
+
+.left{
+ flex: content;
+ text-align: center;
+ padding-left: 20px;
+ padding-right: 100px;
+ 
+ 
+}
+
+.right{
+ flex: content;
+ text-align: center;
+padding-left: 50px;
+ padding-right: 100px;
+ 
+}
+
+
+
+
+
+
+.promotion{
+  width: 100px;
+  height: 100px;
+  background-color:black;
+  border-radius: 50%;
+  text-align: center center;
+  margin-bottom: 50px;
+  display: inline-block;
+  color: blanchedalmond;
+  padding: 30px;
+}
+.promotion a:hover{text-decoration:none}
+
+
+
+
+
+
+.offre img{
+    
+  /* size-adjust: auto;
+    border-radius: 90px;
+    height: 100px;
+    width: 100px; */
+    width: 60%;
+    
+}
+
+.line{
+  height: 2px;
+  width: 33%;
+  margin-left:33% ;
+  margin-right:33% ;
+  
+}
+
+.img-fluid{
+  height: 600px;
+  width: 750px;
+
+}
+
+
+  /*---- TABLET ----*/
+  @media only screen and (max-width: 850px) and (min-width: 450px) {
+    .package{
+      width: 100%;
+      display: block;
+      justify-content: center;
+  }
+
+  .package img{
+    width: 100%;
+    display: block;
+}
+
+   }
+    
+
+    /*---- MOBILE----*/
+    @media only screen and (max-width: 450px) {
+      .package {
+        width: 100%;
+        display: block;
+        justify-content: center;
+
+  }
+  .package img{
+    width: 100%;
+    display: block;
+}
+   }

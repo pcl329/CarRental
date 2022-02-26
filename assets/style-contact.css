@@ -1,0 +1,89 @@
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* flex-flow: column wrap; */
+    background-color: rgb(226, 187, 102);
+    flex-grow: 1;
+}
+
+.title {
+    padding: 5px 10px 20px 10px;
+    font-size: larger;
+}
+
+.adresse {
+    padding: 5px 10px 20px 10px;
+    font-size: smaller;
+}
+
+.tel {
+    padding: 5px 10px 20px 10px;
+    font-size: smaller;
+}
+
+.name {
+    padding: 5px 10px 20px 10px;
+}
+
+.email {
+    padding: 5px 10px 20px 10px;
+}
+
+.message {
+    padding: 5px 10px 20px 10px;
+}
+
+#texte_area {
+    resize: none;
+}
+
+.button {
+    padding: 5px 10px 20px 10px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+.map {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gab1 {}
+
+.gab2 {}
+
+ /*---- TABLET ----*/
+ @media only screen and (max-width: 850px) and (min-width: 450px) {
+    .row{
+      width: 100%;
+      display: block;
+      justify-content: center;
+  }
+
+
+
+   }
+    
+
+    /*---- MOBILE----*/
+    @media only screen and (max-width: 450px) {
+      .row {
+        width: 100%;
+        display: block;
+        justify-content: center;
+
+  }
+
+   }
