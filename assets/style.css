@@ -5,12 +5,14 @@
 
 
 /* >>>> GENERAL STYLE <<<<< */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    text-decoration: none;
 }
 html {
   scroll-behavior: smooth;
@@ -46,7 +48,6 @@ nav.nav--bar .navbar-list {
 }
 nav.nav--bar .navbar-list a {
     color: rgb(241, 210, 142);
-    text-decoration: none;
     text-align: center;
     font-size: 19px;
 }
@@ -59,10 +60,12 @@ nav.nav--bar .navbar-list .nav-item-nav,
 nav.nav--bar .navbar-list .dropdown {
     padding: 10px;
 }
+/*
 nav.nav--bar .navbar-list .nav-item-nav:not(:first-child),
 nav.nav--bar .navbar-list .dropdown {
     border-left: 1px solid rgb(0, 0, 0);
 }
+*/
 
 .dropdown {
     position: relative;
@@ -93,6 +96,52 @@ nav.nav--bar .navbar-list .dropdown {
 .dropdown-content li a:hover {
   color: darkgoldenrod;
 }
+
+/*MENU MOBILE***************************************/
+.navbar-mobile{
+  display: none;
+}
+
+#logo{
+  right: 380px;
+}
+
+.navbar-mobile i{
+  position: fixed;
+  z-index: 9999;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  color: white;
+}
+.modal{
+  transition: top 0.9s;
+  background-color: black;
+  height: 100vh;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.navbar-mobile .navbar-mobile-list{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-mobile .navbar-mobile-list a{
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  padding: 0.5rem;
+}
+.change-modal{
+  top:0
+}
+
 
 /* HOME PAGE STYLE */
 /* HOME PAGE STYLE */
@@ -125,7 +174,6 @@ nav.nav--bar .navbar-list .dropdown {
   margin-bottom: 2.5rem;
 }
 .images div a{
-  text-decoration: none;
   color: black;
 }
 .images div h2:hover{
@@ -190,7 +238,6 @@ color: rgb(121, 108, 53);
   
   .footer-basic ul a {
     color:inherit;
-    text-decoration:none;
     opacity:0.8;
   }
   
@@ -234,3 +281,12 @@ color: rgb(121, 108, 53);
     margin-bottom:0;
   }
   
+/*Media queries FOR MOBILE*/
+@media screen and (max-width : 450px){
+  .navbar-desktop{
+      display: none;
+  }
+  .navbar-mobile{
+      display: block;
+  }
+}

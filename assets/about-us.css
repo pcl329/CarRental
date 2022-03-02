@@ -8,6 +8,7 @@ header.bg-about {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: -100;
 }
 header.bg-about::before {
     content: "";

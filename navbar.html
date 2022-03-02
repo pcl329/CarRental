@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <title>Document</title>
 </head>
 
@@ -13,44 +13,99 @@
 
 
     <nav class="nav--bar">
+        <div class="navbar-desktop">
+            <ul class="navbar-list visible">
+                <li class="nav-item-nav">
+                    <a href="index.html"><i class="fas fa-car" style="font-size:24px;"></i>Eco location</a>
+                </li class="nav-item-nav">
 
-        <ul class="navbar-list visible">
-            <li class="nav-item-nav">
-                <a href="index.html"><i class="fas fa-car" style="font-size:24px;"></i>Eco location</a>
-            </li class="nav-item-nav">
-            
-            <li class="nav-item-nav">
-                <a href="about-us.html">
-                    Qui sommes-nous
-                </a>
-            </li class="nav-item-nav">
-            <div class="dropdown">
-                <a href="#">Marques</a>
-                <ul class="dropdown-content">
-                    <li>
-                        <a href="bmw.html">BMW</a>
+                <li class="nav-item-nav">
+                    <a href="about-us.html">
+                        Qui sommes-nous
+                    </a>
+                </li class="nav-item-nav">
+                <div class="dropdown">
+                    <a href="#">Marques</a>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="bmw.html">BMW</a>
+                        </li>
+                        <li>
+                            <a href="audi.html">Audi</a>
+                        </li>
+                        <li>
+                            <a href="renault.html">Renault</a>
+                        </li>
+                        <li>
+                            <a href="citroen.html">Citroen</a>
+                        </li>
+                    </ul>
+                </div>
+                <li class="nav-item-nav">
+                    <a href="price.html">Nos tarifs</a>
+                </li>
+                <li class="nav-item-nav">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-mobile">
+            <i class="fas fa-bars"></i>
+            <div class="modal">
+                <ul class="navbar-mobile-list">
+                    <li class="nav-item-nav">
+                        <a href="index.html"><i id="logo" class="fas fa-car" ></i>Eco location</a>
+                    </li class="nav-item-nav">
+
+                    <li class="nav-item-nav">
+                        <a href="about-us.html">
+                            Qui sommes-nous
+                        </a>
+                    </li class="nav-item-nav">
+                    <div class="dropdown">
+                        <a href="#">Marques</a>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="bmw.html">BMW</a>
+                            </li>
+                            <li>
+                                <a href="audi.html">Audi</a>
+                            </li>
+                            <li>
+                                <a href="renault.html">Renault</a>
+                            </li>
+                            <li>
+                                <a href="citroen.html">Citroen</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <li class="nav-item-nav">
+                        <a href="price.html">Nos tarifs</a>
                     </li>
-                    <li>
-                        <a href="audi.html">Audi</a>
-                    </li>
-                    <li>
-                        <a href="renault.html">Renault</a>
-                    </li>
-                    <li>
-                        <a href="citroen.html">Citroen</a>
+                    <li class="nav-item-nav">
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
-            <li class="nav-item-nav">
-                <a href="price.html">Nos tarifs</a>
-            </li>
-            <li class="nav-item-nav">
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
-      
+        </div>
     </nav>
 
+    <script>
+        console.log('burgerMenu')
+
+        const icone = document.querySelector('.navbar-mobile i');
+        console.log(icone);
+
+        const modal = document.querySelector('.modal');
+        console.log(modal)
+
+        icone.addEventListener('click', function () {
+            console.log('icone cliquée');
+            modal.classList.toggle('change-modal');
+            icone.classList.toggle('fa-times');
+        });
+    </script>
 </body>
 
 </html>
