@@ -112,7 +112,7 @@ nav.nav--bar .navbar-list .dropdown {
   top: 15px;
   right: 15px;
   font-size: 2rem;
-  color: white;
+  color: rgb(143, 62, 62) ;
 }
 .modal{
   transition: top 0.9s;
