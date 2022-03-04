@@ -1,9 +1,8 @@
 
 #fixe{
     position: fixed;
-    text-align: center center;
-    right: 70px;
-    bottom: 70px;
+    right: 20px;
+    bottom: 5px;
 }
 body{
     background-color: white;
@@ -13,7 +12,6 @@ body{
     height: 100px;
     background-color:black;
     border-radius: 5px 40px 5px;
-    text-align: center center;
     margin-bottom: 50px;
     display: inline-block;
     color: blanchedalmond;

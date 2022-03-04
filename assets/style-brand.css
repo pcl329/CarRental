@@ -3,15 +3,28 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  text-decoration:none
 }
 
 
 #fixe{
   position: fixed;
-  text-align: center center;
-  right: 70px;
-  bottom: 70px;
+  right: 20px;
+  bottom: 5px;
 }
+
+.promotion{
+  width: 100px;
+  height: 100px;
+  background-color:black;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  display: inline-block;
+  color: blanchedalmond;
+  padding: 30px;
+}
+
+
 .model-button{
   display: flex;
   justify-content: space-around;
@@ -99,18 +112,7 @@ a:visited{
 
 
 
-.promotion{
-  width: 100px;
-  height: 100px;
-  background-color:black;
-  border-radius: 50%;
-  text-align: center center;
-  margin-bottom: 50px;
-  display: inline-block;
-  color: blanchedalmond;
-  padding: 30px;
-}
-.promotion a:hover{text-decoration:none}
+
 
 
 
